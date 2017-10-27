@@ -1,0 +1,18 @@
+<resources>
+  <string name="app_name">BestMoviesApp</string>
+  <string name="action_setting">Setting</string>
+  <string name="movie_name">Movie Title</string>
+  <string name="movie_details">Movie Details</string>
+  <string name="plot">Plot Synopsis:</string>
+  <string name="trailer">Trailers:</string>
+  <string name="review">Review:</string>
+  <string name="rating">User Rating</string>
+  <string name="release">Release Date</string>
+  <string name="pref_popular">Most Popular</string>
+  <string name="pref_top_rated">Top Rated</string>
+  <string name="no_review">No review yet</string>
+  <string name="no_trailer">No trailer yet</string>
+  <string name="netinfo">PULL TO REFRESH!</string>
+  <string name="cannt_load_data">Cant load data. Check your connection</string>
+
+</resources>

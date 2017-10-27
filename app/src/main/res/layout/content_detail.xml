@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/viewBg"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.iakrohmts.bestmoviesapp.Activities.DetailActivity"
+  tools:showIn="@layout/activity_detail">
+
+  <android.support.v4.widget.NestedScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/tvTitle"
+      android:layout_marginLeft="@dimen/layout_margin_left"
+      android:layout_marginStart="@dimen/layout_margin_left"
+      android:text="@string/movie_name"
+      android:textAlignment="center"
+      android:layout_marginTop="10dp"
+      android:textSize="25sp"
+      android:textStyle="bold"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/release_date"
+        android:layout_marginLeft="@dimen/layout_margin_left"
+        android:layout_marginStart="@dimen/layout_margin_left"
+        android:text="@string/release"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratting"
+        android:layout_marginLeft="@dimen/layout_margin_left"
+        android:layout_marginStart="@dimen/layout_margin_left"
+        android:text="@string/rating"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:id="@+id/tvPlot"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:text="@string/plot"
+        android:textSize="20sp" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plotSinopsis"
+        android:padding="@dimen/padding_layout"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_below="@+id/tvPlot"/>
+
+      <TextView
+        android:id="@+id/trailerText"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:text="@string/trailer"
+        android:textSize="20sp" />
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTrailer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+      </android.support.v7.widget.RecyclerView>
+
+      <TextView
+        android:id="@+id/videoTCM"
+        android:textSize="18sp"
+        android:padding="@dimen/padding_layout"
+        android:layout_gravity="center_horizontal|center"
+        android:visibility="gone"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:text="@string/review"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+      <TextView
+        android:id="@+id/reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:textSize="18sp"
+        android:layout_below="@+id/reviewText"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginBottom="60dp"/>
+
+      </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
