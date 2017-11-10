@@ -1,2 +1,2 @@
 # BestMoviesApp
-List of movies from themovidb
+List of movies from themoveidb
