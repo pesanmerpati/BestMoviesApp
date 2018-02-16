@@ -1,2 +1,4 @@
 # BestMoviesApp
-Aplikasi Daftar Film dari Themovidb
+List of movies from themoviedb
+
+https://www.themoviedb.org
