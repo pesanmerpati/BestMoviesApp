@@ -22,7 +22,8 @@
       android:theme="@style/AppTheme.NoActionBar">
       <meta-data
         android:name="android.support.PARENT_ACTIVITY"
-        android:value=".Activities.MainActivity"></meta-data>
+        android:value=".Activities.MainActivity">
+      </meta-data>
     </activity>
     <activity android:name=".Activities.WelcomeScreen"
       android:theme="@style/AppTheme.NoActionBar"
