@@ -40,7 +40,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
   public void onBindViewHolder(final MoviesAdapter.MyViewHolder viewHolder, int pos) {
     Glide.with(context)
         .load("https://image.tmdb.org/t/p/w342" + movieList.get(pos).getPosterPath())
-        .placeholder(R.drawable.placeholder_default)
         .into(viewHolder.thumbnail);
     viewHolder.tvId_moview.setText(movieList.get(pos).getId());
     viewHolder.tvOriginaltitle.setText(movieList.get(pos).getOriginalTitle());

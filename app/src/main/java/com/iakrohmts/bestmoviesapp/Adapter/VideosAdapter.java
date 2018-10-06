@@ -40,7 +40,6 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.MyViewHold
   public void onBindViewHolder(VideosAdapter.MyViewHolder holder, int position) {
     Glide.with(context)
         .load(videoList.get(position).getBaseThumbnailUrl())
-        .placeholder(R.drawable.placeholder_moviedetail)
         .into(holder.thumbnail_trailer);
   }
 

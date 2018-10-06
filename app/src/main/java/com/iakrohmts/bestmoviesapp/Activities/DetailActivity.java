@@ -161,8 +161,6 @@ public class DetailActivity extends AppCompatActivity {
 
       Glide.with(this).load("https://image.tmdb.org/t/p/w342" + intent.getStringExtra("poster_path"))
         .thumbnail(0.5f)
-        .crossFade()
-        .diskCacheStrategy(DiskCacheStrategy.ALL)
         .into(img);
       tvReleaseDate.setText(intent.getStringExtra("release_date"));
       tvRatting.setText(intent.getStringExtra("vote_average")+"/10");
